@@ -1,0 +1,167 @@
+Assignment - 3:
+
+1.the values of length and breadth from user and check if it is a square or not.
+package JAVAPROGRAMS1;
+import java.util.*;
+
+public class squareORnot {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int length;
+        System.out.println("Enter a length:");
+        length = sc.nextInt();
+        int breadth;
+        System.out.println("Enter a breadth:");
+        breadth = sc.nextInt();
+        if(length == breadth){
+            System.out.println("it is a square");
+        }else{
+            System.out.println("it is not a square");
+        }
+    }
+}
+
+
+2.program to print absolute value of a number entered by the user.
+public class absolute {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num;
+        System.out.println("Enter a number:");
+        num = sc.nextInt();
+        if(num<0)
+        {
+            num=num*-1;
+        }
+        System.out.println("The absolute value is : " + num);
+    }
+}
+
+
+3.To take input from user for Cost Price (C.P.) and Selling Price(S.P.) and calculate Profit or loss.
+
+package JAVAPROGRAMS1;
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int cp;
+int sp;
+System.out.print("Enter the Cost Price : ");
+cp=sc.nextInt();
+System.out.print("Enter the Selling Price : ");
+sp=sc.nextInt();
+int amt;
+if(cp>sp)
+{
+amt=cp-sp;
+System.out.print("The loss is : "+amt);
+}else if(cp<sp)
+{
+amt=sp-cp;
+System.out.print("The profit is : "+amt);
+}else{
+System.out.print("No Profit No Loss");
+}
+}
+}
+
+4.program to print positive number entered by the user, if user enters a negative number, it is skipped.
+package JAVAPROGRAMS1;
+import java.util.*;
+
+public class positive {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x;
+        System.out.println("Enter a number : ");
+        x = sc.nextInt();
+        if(x>=0){
+            System.out.println("is positive number");
+        }else{
+            System.out.println("is negative or skipped");
+        }
+    }
+
+}
+
+5.- Create a calculator using switch statement to perform addition, subtraction, multiplication and division.
+
+package JAVAPROGRAMS1;
+import java.util.*;
+class Main {
+public static void main(String[] args) {
+char op;
+Double num1;
+Double num2;
+Double ans;
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter an operator: (+, -, *, or /)");
+op = sc.next().charAt(0);
+System.out.print("Enter first number : ");
+num1 = sc.nextDouble();
+System.out.print("Enter second number : ");
+num2 = sc.nextDouble();
+switch (op) {
+case '+':
+ans = num1 + num2;
+System.out.println(num1 + " + " + num2 + " = " + ans);
+break;
+case '-':
+ans = num1 - num2;
+System.out.println(num1 + " - " + num2 + " = " + ans);
+break;
+case '*':
+ans = num1 * num2;
+System.out.println(num1 + " * " + num2 + " = " + ans);
+break;
+case '/':
+ans = num1 / num2;
+System.out.println(num1 + " / " + num2 + " = " + ans);
+break;
+default:
+System.out.println("Error! The operator is not correct");
+break;
+}
+}
+}
+
+6.Write a program to calculate marks to grades.
+package JAVAPROGRAM1;
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int marks;
+System.out.print("Enter the marks : ");
+marks=sc.nextInt();
+if(marks>=90)
+{
+System.out.print("Your Grade is A+");
+}else if(marks>=80)
+{
+System.out.print("Your Grade is A");
+}else if(marks>=70)
+{
+System.out.print("Your Grade is B+");
+}else if(marks>=60)
+{
+System.out.print("Your Grade is B");
+}else if(marks>=50)
+{
+System.out.print("Your Grade is C");
+}else if(marks>=40)
+{
+System.out.print("Your Grade is D");
+}else if(marks>=30)
+{
+System.out.print("Your Grade is E");
+}else if(marks<30){
+System.out.print("Your Grade is f");
+}else{
+System.out.print("Enter valid marks");
+}
+}
+}
